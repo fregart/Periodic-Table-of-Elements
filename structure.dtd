@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT project (sources, columns+, rows+, filters, views)>
+<!ELEMENT sources (csv-file-source)>
+<!ELEMENT csv-file-source (file-path)>
+	<!ELEMENT file-path (#PCDATA)>
+<!ELEMENT columns (column+)>
+<!ELEMENT column (id+, index+, name+, data-type+, semantic-type+)>
+	<!ELEMENT id (#PCDATA)>
+	<!ELEMENT index (#PCDATA)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT data-type (#PCDATA)>
+	<!ELEMENT semantic-type (#PCDATA)>
+<!ELEMENT rows (row+)>
+<!ELEMENT row (id+, fields+)>
+<!ELEMENT fields (atomic-number, element, symbol, atomic-weight, period, group, phase, most-stable-crystal, type, ionic-radius, atomic-radius, electronegativity, first-ionization-potential, density, melting-point-k, boiling-point-k, isotopes, discoverer, year-of-discovery, specific-heat-capacity, electron-configuration, display-row, display-column)>	
+	<!ELEMENT atomic-number (#PCDATA)>
+	<!ELEMENT element (#PCDATA)>
+	<!ELEMENT symbol (#PCDATA)>
+	<!ELEMENT atomic-weight (#PCDATA)>
+	<!ELEMENT period (#PCDATA)>
+	<!ELEMENT group (#PCDATA)>
+	<!ELEMENT phase (#PCDATA)>
+	<!ELEMENT most-stable-crystal (#PCDATA)>
+	<!ELEMENT type (#PCDATA)>
+	<!ELEMENT ionic-radius (#PCDATA)>
+	<!ELEMENT atomic-radius (#PCDATA)>
+	<!ELEMENT electronegativity (#PCDATA)>
+	<!ELEMENT first-ionization-potential (#PCDATA)>
+	<!ELEMENT density (#PCDATA)>
+	<!ELEMENT melting-point-k (#PCDATA)>
+	<!ELEMENT boiling-point-k (#PCDATA)>
+	<!ELEMENT isotopes (#PCDATA)>
+	<!ELEMENT discoverer (#PCDATA)>
+	<!ELEMENT year-of-discovery (#PCDATA)>
+	<!ELEMENT specific-heat-capacity (#PCDATA)>
+	<!ELEMENT electron-configuration (#PCDATA)>
+	<!ELEMENT display-row (#PCDATA)>
+	<!ELEMENT display-column (#PCDATA)>
+<!ELEMENT filters EMPTY>
+<!ELEMENT views (scatter-plot)>
+<!ELEMENT scatter-plot (extent, layout)>
+	<!ELEMENT extent (#PCDATA)>
+<!ELEMENT layout (x-axis-column-id, x-axis-sort-order, y-axis-column-id, y-axis-sort-order, color-column-id, color-sort-order, color-palette-name, size-column-id, size-sort-order, lower-size, upper-size, shape-column-id, label-column-id, link-column-id)>
+	<!ELEMENT x-axis-column-id (#PCDATA)>
+	<!ELEMENT x-axis-sort-order (#PCDATA)>
+	<!ELEMENT y-axis-column-id (#PCDATA)>
+	<!ELEMENT y-axis-sort-order (#PCDATA)>
+	<!ELEMENT color-column-id (#PCDATA)>
+	<!ELEMENT color-sort-order (#PCDATA)>
+	<!ELEMENT color-palette-name (#PCDATA)>
+	<!ELEMENT size-column-id (#PCDATA)>
+	<!ELEMENT size-sort-order (#PCDATA)>
+	<!ELEMENT lower-size (#PCDATA)>
+	<!ELEMENT upper-size (#PCDATA)>
+	<!ELEMENT shape-column-id (#PCDATA)>
+	<!ELEMENT label-column-id (#PCDATA)>
+	<!ELEMENT link-column-id (#PCDATA)>
